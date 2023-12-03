@@ -1422,7 +1422,8 @@ class MyMAinWindow(QMainWindow, Ui_AVDV):
         if mode == 5:  # javdb模式
             self.add_text_main('[!]Please Wait Three Seconds！')
             time.sleep(3)
-        json_data = getDataFromJSON(number, config, mode, appoint_url)
+        # json_data = getDataFromJSON(number, config, mode, appoint_url)
+        json_data = getDataFromJSON(number, config, 3, appoint_url)
         return json_data
 
     # ========================================================================json_data添加到主界面
